@@ -155,10 +155,6 @@ function renderCards() {
   ${item.originLink ? `<a class="link-btn link-origin" href="${escapeHtml(item.originLink)}" target="_blank" rel="noopener noreferrer">原品 &gt;&gt;&gt;</a>` : `<span></span>`}
   ${item.link1688 ? `<a class="link-btn link-1688" href="${escapeHtml(item.link1688)}" target="_blank" rel="noopener noreferrer">1688链接 &gt;&gt;&gt;</a>` : `<span></span>`}
 </div>
-            ${item.originLink ? `<a class="link-btn link-origin" href="${escapeHtml(item.originLink)}" target="_blank" rel="noopener noreferrer">原品 &gt;&gt;&gt;</a>` : `<span></span>`}
-            ${item.link1688 ? `<a class="link-btn link-1688" href="${escapeHtml(item.link1688)}" target="_blank" rel="noopener noreferrer">1688链接 &gt;&gt;&gt;</a>` : `<span></span>`}
-          </div>
-        </div>
       </article>
     `;
   }).join('');
