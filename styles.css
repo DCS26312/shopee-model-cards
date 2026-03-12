@@ -285,35 +285,33 @@ body{
   align-items:center;
 }
 
-.meta-row .meta{
+.meta-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px 12px;
+  align-items:center;
+}
+
+.meta{
+  color:#8a9099;
+  font-size:12px;
+  line-height:1.35;
   min-width:0;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
 }
 
-.meta-row .link-btn{
-  justify-self:start;
-}
-.meta{
-  color:#8a9099;
-  font-size:12px;
-  line-height:1.35;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-}
-.meta strong{
-  color:#7a8089;
-}
 .link-btn{
   text-decoration:none;
   font-size:12px;
   font-weight:900;
   white-space:nowrap;
+  justify-self:start;
 }
-.link-origin{color:var(--blue)}
-.link-1688{color:var(--pink)}
+
+.link-origin{color:#0b57d7;}
+.link-1688{color:#ff4e9f;}
 .empty{
   text-align:center;
   color:#6b7280;
