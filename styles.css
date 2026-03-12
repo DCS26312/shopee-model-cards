@@ -280,9 +280,20 @@ body{
 }
 .meta-row{
   display:grid;
-  grid-template-columns:1fr 1fr auto auto;
-  gap:10px;
+  grid-template-columns:1fr 1fr;
+  gap:8px 12px;
   align-items:center;
+}
+
+.meta-row .meta{
+  min-width:0;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.meta-row .link-btn{
+  justify-self:start;
 }
 .meta{
   color:#8a9099;
