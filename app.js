@@ -137,23 +137,24 @@ function renderCards() {
         </div>
 
         <div class="card-bottom">
-          <div class="title" title="${escapeHtml(item.title || '')}">${escapeHtml(item.title || '')}</div>
+  <div class="title" title="${escapeHtml(item.title || '')}">${escapeHtml(item.title || '')}</div>
 
-          <div class="price-row">
-            <div class="price">¥${formatPrice(item.targetPrice)}</div>
-            <div class="spec-name" title="${escapeHtml(item.specName || '')}">${escapeHtml(item.specName || '')}</div>
-          </div>
+  <div class="price-row">
+    <div class="price">¥${formatPrice(item.targetPrice)}</div>
+    <div class="spec-name" title="${escapeHtml(item.specName || '')}">${escapeHtml(item.specName || '')}</div>
+  </div>
 
-          <div class="id-row">
-            <div class="count-badge">共${escapeHtml(String(item.specCount || 1))}款</div>
-            <div class="invitation-box" data-copy="${escapeHtml(item.invitationId || '')}">${escapeHtml(item.invitationId || '')}</div>
-          </div>
+  <div class="id-row">
+    <div class="count-badge">共${escapeHtml(String(item.specCount || 1))}款</div>
+    <div class="invitation-box" data-copy="${escapeHtml(item.invitationId || '')}">${escapeHtml(item.invitationId || '')}</div>
+  </div>
 
-          <div class="meta-row">
-  <div class="meta"><strong>${escapeHtml(item.updateDate || '')}</strong>发布</div>
-  <div class="meta" title="${escapeHtml(item.modelId || '')}">${escapeHtml(item.modelId || '')}</div>
-  ${item.originLink ? `<a class="link-btn link-origin" href="${escapeHtml(item.originLink)}" target="_blank" rel="noopener noreferrer">原品 &gt;&gt;&gt;</a>` : `<span></span>`}
-  ${item.link1688 ? `<a class="link-btn link-1688" href="${escapeHtml(item.link1688)}" target="_blank" rel="noopener noreferrer">1688链接 &gt;&gt;&gt;</a>` : `<span></span>`}
+  <div class="meta-row">
+    <div class="meta"><strong>${escapeHtml(item.updateDate || '')}</strong>发布</div>
+    <div class="meta" title="${escapeHtml(item.modelId || '')}">${escapeHtml(item.modelId || '')}</div>
+    ${item.originLink ? `<a class="link-btn link-origin" href="${escapeHtml(item.originLink)}" target="_blank" rel="noopener noreferrer">原品 &gt;&gt;&gt;</a>` : `<span></span>`}
+    ${item.link1688 ? `<a class="link-btn link-1688" href="${escapeHtml(item.link1688)}" target="_blank" rel="noopener noreferrer">1688链接 &gt;&gt;&gt;</a>` : `<span></span>`}
+  </div>
 </div>
       </article>
     `;
