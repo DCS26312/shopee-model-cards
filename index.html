@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>厨具热销原品清单</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=20260623" />
 </head>
 <body>
   <header class="hero-wrap">
@@ -32,15 +32,26 @@
     <section class="toolbar-panel">
       <div class="toolbar-grid">
         <input id="keyword" type="text" placeholder="搜索标题/ID..." />
-        <select id="category2"><option value="">二级类目(全部)</option></select>
-        <select id="category3"><option value="">三级类目(全部)</option></select>
+
+        <!-- 页面二级类目：对应 products.json 里的 category1 -->
+        <select id="category2">
+          <option value="">二级类目(全部)</option>
+        </select>
+
+        <!-- 页面三级类目：对应 products.json 里的 category2 -->
+        <select id="category3">
+          <option value="">三级类目(全部)</option>
+        </select>
+
         <select id="priority">
           <option value="">P0/P1(全部)</option>
           <option value="P0">P0</option>
           <option value="P1">P1</option>
         </select>
+
         <input id="minPrice" type="number" placeholder="最低价" />
         <input id="maxPrice" type="number" placeholder="最高价" />
+
         <select id="sortBy">
           <option value="default">默认排序</option>
           <option value="dateDesc">最新发布</option>
@@ -48,10 +59,11 @@
           <option value="priceDesc">价格降序</option>
         </select>
       </div>
+
       <div class="toolbar-bottom">
         <div class="toolbar-left">
-          <button id="resetBtn" class="action-btn ghost">重置筛选</button>
-          <button id="exportBtn" class="action-btn">导出当前结果</button>
+          <button id="resetBtn" class="action-btn ghost" type="button">重置筛选</button>
+          <button id="exportBtn" class="action-btn" type="button">导出当前结果</button>
         </div>
         <div class="toolbar-right">已筛选：<span id="filteredCount">0</span> 款</div>
       </div>
@@ -64,6 +76,7 @@
   </main>
 
   <div id="toast" class="toast hidden"></div>
-  <script src="./app.js"></script>
+
+  <script src="./app.js?v=20260623" defer></script>
 </body>
 </html>
